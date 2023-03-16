@@ -16,33 +16,51 @@
 
 <body>
 
-    <nav id="nav-menu">
-        <div>
-            LOGO
+    <!-- ------------------HOME SECTION START------------------------ -->
+
+
+    <div id="header">
+        <div class="container">
+
+            <nav id="nav-menu" class="navbar">
+                <img src="images/name-2.png" alt="mynameimage" class="logo home-img" style="width: 10%;">
+
+                <ul id="sidemenu">
+                    <li><a class="nav-link home" href="#home">HOME</a></li>
+                    <li><a class="nav-link about" href="#about">ABOUT</a></li>
+                    <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
+                    <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
+                    <li><a href="#githubs">GITHUB</a></li>
+                    <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
+                    <li><a id="resume-button-1" class="nav-link resume" href="files/Surya_Chauhan_Resume.pdf" download="" target="_blank">RESUME</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
         </div>
-        <div>
-            <div id="home">
-                <a href="#">HOME</a>
-            </div>
-            <div id="about" class="about section">
-                <a href="#">ABOUT ME</a>
-            </div>
-            <div id="skills">
-                <a href="#">SKILLS</a>
-            </div>
-            <div id="projects">
-                <a href="#">PROJECTS</a>
-            </div>
-            <div id="contact">
-                <a href="#">CONTACT</a>
+    </div>
+
+    <div id="home" class="header-text">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="about-col-2">
+                    <h1>Hi,I'm <span class="type"> Surya</span> <br>Chauhan from Gwalior, Madhya Pradesh.</h1>
+                    <p>A Java Backend Developer with specialization in Java, Spring Boot, SQL and Hybernate.<br/>Enthusiastic in learning new things.
+                    </p>
+                    <a id="resume-button-2" href="files/Surya_Chauhan_Resume.pdf" download="" style="font-size: 30px;">Download CV</a>
+
+
+                </div>
+                <div class="about-col-1 imk">
+                    <img src="images\gifprofileimage.gif" alt="logoimage">
+                </div>
+
             </div>
         </div>
-    </nav>
 
-
-
-    <!-- link to js -->
-    <script src="script.js"></script>
+    </div>
 
 
 </body>
