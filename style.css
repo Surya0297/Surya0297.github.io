@@ -11,7 +11,7 @@
     }
     
     body {
-        background-color: #080808;
+        background-color: #312c2c;
         color: #ffffff;
         /* color: orange; */
     }
@@ -167,6 +167,7 @@
     
     .about-col-1 img {
         width: 100%;
+        height: 80%;
         border-radius: 15px;
     }
     
