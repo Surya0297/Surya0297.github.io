@@ -35,7 +35,13 @@
                 <li><a href="#projects" class="menu-btn nav-link projects">Projects</a></li>
                 <li><a href="#contact" class="menu-btn nav-link contact">Contact</a></li>
                 <!-- update resume -->
-                <li><a href="files/Surya_Chauhan_Resume.pdf" class="menu-btn nav-link resume" id="resume-button-1" download target="_blank">Resume <i style="font-size: 15px; "  class="fa fa-download" aria-hidden="true"></i></a></li>
+                <li>
+                    <!-- <a href="files/Surya_Chauhan_Resume.pdf" class="menu-btn nav-link resume" id="resume-button-1" download target="_blank">Resume <i style="font-size: 15px; "  class="fa fa-download" aria-hidden="true"></i></a></li> -->
+                    <button onclick="resume()" style="background: transparent; border: none;" id="resume-button-1" style="">
+                        <a  class="menu-btn nav-link resume" id="resume-link-1" style="margin-top:0px" href="files/Surya_Chauhan_Resume.pdf" target="_blank" download>
+                        Resume </a>
+                      </button>
+
             </ul>
             <!-- <div class="menu-btn logo">
                 <i class="fas fa-bars"></i>
@@ -66,26 +72,21 @@
                 <div class="column right">
                     <div class="text">I'm Surya Chauhan and I'm a <span class="typing-2">Java Back-end Developer</span></div>
                     <p id="user-detail-intro">
-                        <!-- Analytical and detail-oriented aspiring Java Backend Developer. 
-            Constantly seeking better quality, efficiency, and a healthy environment. Proficient in Java, Spring, SpringBoot, JavaScript.
-            I enjoy problem-solving and learning from the challenges that come along. 
-            Thus, the challenges bring the best out of me.I am looking for an environment 
-            that will allow me to implement the best of my knowledge and simultaneously allow 
-            me to learn and grow. -->
+
                         I am dedicated Java Backend Developer with proven performance with 1200+ hours of coding experience and have solved 600 above DSA problems, Specialized in Java, SQL, Spring Boot, HTML, CSS and JavaScript from Masai School. I am a quick learner and problem
                         solver who's constantly exploring for new technologies. Now looking to start a career as a Backend Developer in a reputated firm.
 
                     </p>
+                    <button onclick="resume()" id="resume-button-2">
+                        <a id="resume-link-2" style="margin-top:0px" href="files/Surya_Chauhan_Resume.pdf" target="_blank" download>
+                        Download Resume </a>
+                      </button>
 
-                    <a href="files/Surya_Chauhan_Resume.pdf" id="resume-button-2" download target="_blank">Download CV</a>
-                    <!-- <script>
-                  let resumeid = document.getElementById("resume-button-2 ")
-                    function myDownloadFunction() {
-                        document.location("files/Surya_Chauhan_Resume.pdf ");
-                        
-                    }
-                    
-                </script> -->
+                    <script>
+                        function resume() {
+                            window.open("files/Surya_Chauhan_Resume.pdf", "_blank")
+                        }
+                    </script>
                 </div>
             </div>
         </div>
