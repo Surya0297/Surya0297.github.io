@@ -13,7 +13,7 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 #container-navbar {
@@ -51,6 +51,7 @@ body {
     }
     .navbar {
         height: auto;
+        border-radius: 0%;
     }
     li {
         padding: 10px;
