@@ -528,14 +528,31 @@ p {
 }
 
 .projectcardsmain {
-    display: flex;
-    flex-wrap: wrap;
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     gap: 20px;
     margin-bottom: 60px;
 }
 
+@media (max-width: 790px) {
+    .projectcardsmain {
+        grid-template-columns: repeat(1, 1fr);
+        width: 60%;
+    }
+}
+
+@media (max-width: 413px) {
+    .projectcardsmain {
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+    }
+}
+
 .project-card {
+    width: 100%;
     position: relative;
     border-radius: 10px;
     overflow: hidden;
@@ -657,12 +674,12 @@ p {
 }
 
 #contact {
-    background-color: #ddd;
+    width: 100%;
+    margin: auto;
     text-align: center;
 }
 
-.contact-content {
-    width: 60%;
-    margin: auto;
-    display: flex;
+#contact a {
+    text-decoration: none;
+    color: #0077b5;
 }
